@@ -24,3 +24,9 @@ describe('isVowel', function() {
     expect(isVowel('b')).to.equal(false);
   });
 });
+
+describe('convertSentence', function() {
+  it("converts all words in a sentence", function() {
+    expect(convertSentence("This cat squelch timmy apple aardvark")).to.equal("isthay atcay elchsquay immytay appleay aardvarkay");
+  });
+});

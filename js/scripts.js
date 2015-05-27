@@ -18,9 +18,29 @@ var convertWord = function(word) {
 
   word = word.replace(slicedPortion, "") + (slicedPortion) + "ay";
 
+  console.log(word);
   return word;
 };
 
 var isVowel = function(char) {
   return "aeiou".indexOf(char) >= 0;
 };
+
+var convertSentence = function(sentence) {
+  var words = sentence.split(" ");
+  var convertedWords = [];
+  words.forEach(function(word){
+    convertedWords.push(convertWord(word));
+  });
+  return convertedWords.join([" "]);
+};
+
+$(document).ready(function() {
+  $("form#pig-latin").submit(function(event) {
+    var targetContent = $("input#word").val();
+    var result = convertSentence(targetContent);
+    $("#result-wrapper").show();
+    $("#result").text(result);
+    event.preventDefault();
+  });
+});

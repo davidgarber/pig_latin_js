@@ -1,0 +1,37 @@
+body {
+  background: url("http://www.hadooptpoint.com/wp-content/uploads/2014/11/pig-latin.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.container {
+  margin-top: 100px;
+  min-height: 500px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,.6);
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+#submit-button {
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.page-header {
+  margin-bottom: 50px;
+}
+
+#result-wrapper {
+  display: none;
+  margin-top: 100px;
+  font-size: 22px;
+  text-align: center;
+}
+
+#result-wrapper p:first-child {
+  font-size: 15px;
+}
